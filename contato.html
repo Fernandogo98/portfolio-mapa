@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO básico -->
+    <title>Contato | Fernando Junior Oliveira de Faria</title>
+    <meta name="description" content="Entre em contato com Fernando Junior Oliveira de Faria para propostas, dúvidas ou oportunidades de trabalho.">
+    <meta name="keywords" content="contato, formulário, desenvolvedor front-end">
+    <meta name="author" content="Fernando Junior Oliveira de Faria">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== CABEÇALHO E MENU ===== -->
+    <header class="cabecalho">
+        <div class="logo">FJO</div>
+
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+        <section class="secao-contato-topo">
+            <h1>Fale Comigo</h1>
+            <p>Tem alguma proposta, dúvida ou só quer trocar uma ideia? Preencha o formulário abaixo.</p>
+        </section>
+
+        <section class="container-formulario">
+            <form id="form-contato" novalidate>
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <span class="erro" id="erro-nome"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="seuemail@exemplo.com">
+                    <span class="erro" id="erro-email"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?">
+                    <span class="erro" id="erro-assunto"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                    <span class="erro" id="erro-mensagem"></span>
+                </div>
+
+                <button type="submit" class="botao">Enviar Mensagem</button>
+
+                <p class="mensagem-sucesso" id="mensagem-sucesso">
+                    ✓ Mensagem enviada com sucesso! Em breve retornarei o contato.
+                </p>
+            </form>
+
+            <!-- ===== REDES SOCIAIS ===== -->
+            <div class="redes-sociais">
+                <p class="redes-titulo">Ou me encontre por aqui:</p>
+                <div class="redes-links">
+                    <a href="https://www.linkedin.com/in/fernando-junior-321b6b339/"
+                       target="_blank" rel="noopener noreferrer" class="rede-link">
+                        <span class="rede-icone">in</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Fernandogo98"
+                       target="_blank" rel="noopener noreferrer" class="rede-link">
+                        <span class="rede-icone">&lt;/&gt;</span>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="rodape">
+        <p>&copy; 2026 Fernando Junior Oliveira de Faria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO básico -->
+    <title>Projetos | Fernando Junior Oliveira de Faria</title>
+    <meta name="description" content="Confira os projetos desenvolvidos por Fernando Junior Oliveira de Faria, incluindo trabalhos em HTML, CSS, JavaScript e C.">
+    <meta name="keywords" content="projetos, portfolio, javascript, html, css, github">
+    <meta name="author" content="Fernando Junior Oliveira de Faria">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== CABEÇALHO E MENU ===== -->
+    <header class="cabecalho">
+        <div class="logo">FJO</div>
+
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html" class="ativo">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+        <section class="secao-projetos-topo">
+            <h1>Meus Projetos</h1>
+            <p>Uma seleção de projetos que desenvolvi durante meus estudos em programação.</p>
+        </section>
+
+        <!-- ===== FILTRO DE CATEGORIAS (EFEITO JS) ===== -->
+        <div class="filtros" id="filtros">
+            <button class="filtro-botao ativo" data-filtro="todos">Todos</button>
+            <button class="filtro-botao" data-filtro="frontend">Front-End</button>
+            <button class="filtro-botao" data-filtro="logica">Lógica/Backend</button>
+        </div>
+
+        <!-- ===== GRADE DE PROJETOS ===== -->
+        <section class="grade-projetos">
+
+            <div class="card-projeto" data-categoria="logica">
+                <div class="card-projeto-topo">
+                    <span class="tag-linguagem">C</span>
+                </div>
+                <h3>Sistema de Gerenciamento de Biblioteca</h3>
+                <p>
+                    Sistema desenvolvido em linguagem C para gerenciar o cadastro,
+                    empréstimo e devolução de livros, aplicando conceitos de lógica
+                    de programação e estruturas de dados.
+                </p>
+                <a href="https://github.com/Fernandogo98/SistemaGerenciamentoBiblioteca"
+                   target="_blank" rel="noopener noreferrer" class="link-github">
+                    Ver no GitHub →
+                </a>
+            </div>
+
+            <div class="card-projeto" data-categoria="frontend">
+                <div class="card-projeto-topo">
+                    <span class="tag-linguagem">CSS</span>
+                </div>
+                <h3>Site Simples</h3>
+                <p>
+                    Página web desenvolvida com foco em estilização CSS, praticando
+                    layout, espaçamento e organização visual de uma estrutura HTML.
+                </p>
+                <a href="https://github.com/Fernandogo98/site-simples"
+                   target="_blank" rel="noopener noreferrer" class="link-github">
+                    Ver no GitHub →
+                </a>
+            </div>
+
+            <div class="card-projeto" data-categoria="logica">
+                <div class="card-projeto-topo">
+                    <span class="tag-linguagem">HTML/JS</span>
+                </div>
+                <h3>Lógica de Programação — Aula 1</h3>
+                <p>
+                    Exercícios introdutórios de lógica de programação aplicados em
+                    JavaScript, trabalhando estruturas condicionais e de repetição.
+                </p>
+                <a href="https://github.com/Fernandogo98/logica-js-aula_1"
+                   target="_blank" rel="noopener noreferrer" class="link-github">
+                    Ver no GitHub →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Mensagem exibida quando o filtro não encontra nenhum projeto -->
+        <p class="sem-resultados" id="sem-resultados" style="display: none;">
+            Nenhum projeto encontrado nessa categoria.
+        </p>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="rodape">
+        <p>&copy; 2026 Fernando Junior Oliveira de Faria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
